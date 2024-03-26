@@ -1,1 +1,4 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNzFfB27aZTfFG0pgC6DBL6C37BlkVVKRBS+D8HYubvo95sf/sFvGP4Ayd8RhRT3tlVPMEbn725/AluEEyC+aya796JF6X0DUehpQDSDBHurKdZyvlkJb8r1iZjaAQbGv2MuOv0XwMh/UB9hKz1sXWOIzyQ7KZ6hX0MCX55a3OZfvtul+mTTnIQXJ2bOJrDYtN3te52oP8xLWJsVwOgUTkNbgCQXV3IWSmU/zU2bEFKY/sDTv/B6Yd02acz2rO6R05sQmeP2ffSV1H9GAX27uzjQMFH68gzwXu12uU3H9rX0F2r+4C4H+A5pLwv5sfuVKDdaE3+kwSISzxSG16m9CtwBl4Bhp2+lSSXnprwVOLmdQgqhcf/9mjUeoBC9U7YIMyehlgeMZqVXttS35kHGg3CzPOJu9HXqX1FHwI9CKcXpqNRr59LFHJ5p2J/FKrmEeYprULLBDxXOigsjpLgF8QXhcoRoSDgGvAi/XZFulAy9UXxdtJZhbJ7k98eHvpdKs= root@d0c5f8697443
+#!/usr/bin/env bash
+# A Bash script that uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+
+ssh -i ~/.ssh/school ubuntu@3.90.85.175
