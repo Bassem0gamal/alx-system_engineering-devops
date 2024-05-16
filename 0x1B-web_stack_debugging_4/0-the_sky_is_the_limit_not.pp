@@ -1,4 +1,4 @@
-#Increases the amount of traffix that Nginx can handle
+# Increases the amount of traffix that Nginx can handle
 
 exec {'replace':
   provider => shell,
