@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """"
-Function that queries the Reddit API 
+Function that queries the Reddit API
 and prints the titles of the first 10 hot posts
 """
 import requests
@@ -21,7 +21,7 @@ def top_ten(subreddit):
     }
 
     response = requests.get(url, headers=headers, allow_redirects=False,
-                             params=params)
+                            params=params)
 
     if response.status_code == 404:
         print("None")
