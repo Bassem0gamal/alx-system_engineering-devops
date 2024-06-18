@@ -19,4 +19,3 @@ def number_of_subscribers(subreddit):
         return result.get('subscribers')
     else:
         return 0
-    
