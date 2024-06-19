@@ -11,7 +11,8 @@ def count_words(subreddit, word_list, after="", counts=None):
     headers = {"User-Agent": "my-app"}
     params = {"after": after}
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
-    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False)
 
     if response.status_code != 200:
         return
@@ -26,6 +27,7 @@ def count_words(subreddit, word_list, after="", counts=None):
     if data["after"] is not None:
         count_words(subreddit, word_list, data["after"], counts)
     elif after == "":
-        for word, count in sorted(counts.items(), key=lambda item: (-item[1], item[0])):
+        for word, count in sorted(counts.items(),
+                                  key=lambda item: (-item[1], item[0])):
             if count > 0:
                 print(f"{word}: {count}")
